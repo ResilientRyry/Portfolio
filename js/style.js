@@ -1,8 +1,17 @@
-// const navbar = Array.from(document.querySelectorAll(' header ul > li'));
-// let dsc = 20;
-// for (var i = 1; i < navbar.length; i++) {
-//   navbar[i].style.margin = `10px ${dsc}\%`
-//   dsc+=20
-// }
-// console.log(navbar);
-let a = 1
+let targets = document.querySelectorAll(".targets");
+
+for (var i = 0; i < targets.length; i++) {
+  targets[i].addEventListener('mouseover', (el)=>{
+    let target = el.target.text;
+    if (target.toLowerCase() === "home" || target.toLowerCase() === "resume") {
+      document.querySelector(`.${target.toLowerCase()}`).style.display = "block";
+    }
+  });
+  targets[i].addEventListener('mouseout', (el)=>{
+    let target = el.target.text;
+    if (target.toLowerCase() !== "home" || target.toLowerCase() !== "resume") {
+      document.querySelector(`.${target.toLowerCase()}`).style.display = "none";
+    }
+  });
+};
+console.log(targets);

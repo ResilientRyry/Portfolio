@@ -1,5 +1,6 @@
 $color_1: white;
 $background_color_1: black;
+$blue: #42C5E4;
 
 /* h1, h2, h3, h4, img, p, a, ul, li{
   display: block;
@@ -39,6 +40,16 @@ header {
 		width: 80%;
 		padding: 40px 10%;
 	}
+	.menu{
+		display: none;
+		width: 100%;
+	}
+	.menu li{
+		display: block;
+	}
+	.menu li a{
+		width: 100%;
+	}
 }
 /* END HEADER---------------- */
 /* INDEX CONTAINER------------- */
@@ -48,6 +59,12 @@ header {
 			border-bottom: 2px solid black;
 		}
 	}
+}
+.about{
+	font-size: 24px;
+}
+.about p{
+	padding: 0px 100px;
 }
 .projects.col {
 	p {
@@ -63,7 +80,7 @@ header {
 	display: none;
 }
 .experience li{
-	border: 1px solid black;
+	// border: 1px solid black;
 }
 .experience i{
 	text-align: right;
@@ -76,6 +93,24 @@ footer {
 	margin-top: 25px;
 	.row {
 		padding: 0 10%;
+	}
+	.socials{
+		width: 100%;
+	}
+	.socials .col{
+		float: left;
+		width: 50%;
+		font-size: 35px;
+		line-height: 30px;
+	}
+	.socials .col span{
+		font-size: 20px;
+	}
+	.socials i:hover{
+		color: $color_1;
+	}
+	.col-6 p{
+		padding: 0;
 	}
 	img {
 		width: 50%;
