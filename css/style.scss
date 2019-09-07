@@ -16,109 +16,31 @@ html {
 		height: 100%;
 		float: left;
 	}
-}
-li {
-	text-align: left;
-	list-style: none;
-	margin-right: 10%;
-}
-/* HEADER---------------- */
-header {
-	width: 90%;
-	height: auto;
-	margin: 20px 10%;
-	img {
-		width: 65%;
-		height: 300px;
-		border-radius: 50%;
-	}
-	li{
+	.contact{
 		text-align: center;
-		display: inline;
 	}
-	.deets {
-		width: 80%;
-		padding: 40px 10%;
-	}
-	.menu{
-		display: none;
+	.row{
 		width: 100%;
 	}
-	.menu li{
-		display: block;
-	}
-	.menu li a{
-		width: 100%;
-	}
-}
-/* END HEADER---------------- */
-/* INDEX CONTAINER------------- */
-.row {
-	h4 {
-		span {
-			border-bottom: 2px solid black;
+	header{
+		margin-top: 50px;
+
+
+		nav li{
+			list-style: none;
+			display: inline-block;
+			font-size: 20px;
+			float: left;
+			width: 33.33%
+		}
+		img{
+			width: 50%;
+			height: 550px;
+			border-radius: 50%;
+			margin: 0px 25%;
+		}
+		.container {
+			background-color: black
 		}
 	}
 }
-.about{
-	font-size: 24px;
-}
-.about p{
-	padding: 0px 100px;
-}
-.projects.col {
-	p {
-		width: 49%;
-		display: inline-block;
-    // background-color: white;
-	}
-}
-.experience .row  p{
-	margin-top: 1rem;
-	padding:10px;
-	background-color: black;
-	display: none;
-}
-.experience li{
-	// border: 1px solid black;
-}
-.experience i{
-	text-align: right;
-}
-/* END INDEX CONTAINER------------- */
-/* FOOTER--------------------- */
-footer {
-	position: static;
-	bottom: 0;
-	margin-top: 25px;
-	.row {
-		padding: 0 10%;
-	}
-	.socials{
-		width: 100%;
-	}
-	.socials .col{
-		float: left;
-		width: 50%;
-		font-size: 35px;
-		line-height: 30px;
-	}
-	.socials .col span{
-		font-size: 20px;
-	}
-	.socials i:hover{
-		color: $color_1;
-	}
-	.col-6 p{
-		padding: 0;
-	}
-	img {
-		width: 50%;
-		height: auto;
-	}
-}
-.logo {
-	text-align: center;
-}
-
-/* END FOOTER--------------------- */

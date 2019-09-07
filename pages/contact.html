@@ -12,32 +12,52 @@
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="contact">
+
+    <!-- HEADER Begin -->
     <header class="container-fluid">
       <section class="row">
-        <section class="col deets">
+        <nav class="row">
+          <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="resume.html">Resume</a> </li>
+            <li> <a href="contact.html">Contact Me</a> </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="deets">
+          <section class="row">
+          <!-- header image -->
+          <section class="container">
+            <h2>Contact Me!</h2>
+            <p>I am always reachable via email. Hope to here from you soon...</p>
+          </section>
 
-          <section class="row">
-            <h1>Ryan Tillman-French</h1>
-            <p>Software Engineer</p>
-          </section>
-          <section class="row">
-            <ul>
-              <li> <a href="index.html">Home</a> </li>
-              <li> <a href="resume.html">Resume</a> </li>
-              <li> <a href="contact.html">Contact</a> </li>
-            </ul>
-          </section>
-        </section>
-        <section class="col">
-          <img src="../images/selfie.jpg" alt="Ryan Tillman-French">
         </section>
       </section>
     </header>
 
-    <section class="container">
+    <!-- HEADER END -->
 
+    <!-- CONTACT FORM BEGIN -->
+    <section class="container">
+      <form  action="https://formspree.io/ryan.tillman.french@gmail.com" method="POST">
+        <section class="form-group">
+          <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+        </section>
+        <section class="form-group">
+          <input class="form-control" type="text" name="number" placeholder="Number">
+        </section>
+        <section class="form-group">
+          <input class="form-control" type="email" name="email" placeholder="Email" required>
+        </section>
+        <section class="form-group">
+          <textarea class="form-control" name="message" required></textarea>
+        </section>
+        <button class="submit" type="submit" name="submit" value="Send">Submit</button>
+      </form>
     </section>
+    <!-- CONTACT FORM END -->
 
     <footer class="container-fluid">
       <section class="row">
