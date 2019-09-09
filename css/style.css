@@ -34,5 +34,95 @@ html header img {
 html header .container {
   background-color: black;
 }
+html .container .row.experience ul {
+  text-align: left;
+}
+html footer {
+  width: 80%;
+}
+html footer .socials {
+  padding-left: 30%;
+  text-align: left;
+}
+html footer img {
+  width: 33%;
+  height: auto;
+  margin-left: 40%;
+}
+
+#resume i {
+  margin-right: 10px;
+}
+#resume h2, #resume h3 {
+  width: 100%;
+  text-align: center;
+}
+#resume .row:first-of-type {
+  color: white;
+}
+#resume .row {
+  color: black;
+}
+#resume .row h2 {
+  color: white;
+}
+#resume .col p, #resume .col h1 {
+  text-align: left;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+#resume .col button {
+  border-color: white;
+}
+#resume .col button a {
+  color: white;
+}
+#resume .col button a:hover {
+  color: #42C5E4;
+}
+#resume .col button:hover {
+  border-color: white;
+  background-color: black;
+  color: #42C5E4;
+}
+#resume .col img {
+  width: 60%;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0px 20%;
+}
+#resume .details {
+  display: none;
+}
+#resume .details .location {
+  color: grey;
+  font-style: italic;
+  margin-right: 10px;
+}
+#resume .details .location:hover {
+  color: #42C5E4;
+}
+#resume .details .title {
+  margin: 0px;
+  padding: 0px;
+}
+#resume .details .description {
+  width: 50%;
+  margin: 0px 25%;
+}
+
+.deets .row section {
+  width: 100%;
+  text-align: center;
+}
+
+.contactForm {
+  padding: 25px;
+}
+
+form textarea {
+  height: 300px;
+  margin: 0px 10px;
+}
 
 /*# sourceMappingURL=style.css.map */

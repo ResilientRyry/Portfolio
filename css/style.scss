@@ -6,7 +6,7 @@ $blue: #42C5E4;
   display: block;
 } */
 
-
+// General/Index CSS
 html {
 	body {
 		color: $color_1;
@@ -40,7 +40,105 @@ html {
 			margin: 0px 25%;
 		}
 		.container {
-			background-color: black
+			background-color: black;
 		}
 	}
+	.container{
+		.row.experience ul{
+			text-align: left;
+		}
+	}
+	footer{
+		width: 80%;
+
+		.socials{
+			padding-left: 30%;
+			text-align: left;
+		}
+		img{
+			width: 33%;
+			height: auto;
+			margin-left: 40%;
+		}
+	}
+}
+// Resume CSS
+#resume {
+	i{
+		margin-right: 10px;
+	}
+	h2 , h3{
+		width: 100%;
+		text-align: center;
+	}
+	.row:first-of-type{
+		color: white;
+	}
+	.row{
+		color: black;
+
+		h2{
+			color: white;
+		}
+	}
+	.col{
+		p , h1{
+			text-align: left;
+			padding: 0px;
+			margin-bottom: 5px;
+		}
+		button{
+			border-color: white;
+			a{
+			color: white;
+			}
+			a:hover{
+				color: $blue;
+			}
+		}
+		button:hover{
+			border-color: white;
+			background-color: black;
+			color: $blue;
+		}
+	img{
+		width: 60%;
+		height: 300px;
+		border-radius: 50%;
+		margin: 0px 20%;
+	}
+}
+.details{
+	display: none;
+
+	.location{
+		color: grey;
+		font-style: italic;
+		margin-right: 10px;
+	}
+	.location:hover{
+		color: $blue;
+	}
+	.title{
+		margin: 0px;
+		padding: 0px;
+	}
+	.description{
+		width: 50%;
+		margin: 0px 25%;
+	}
+}
+
+}
+// Contacts CSS
+.deets .row section{
+	width: 100%;
+	text-align: center;
+}
+.contactForm{
+	padding: 25px;
+}
+form textarea{
+	height: 300px;
+	margin: 0px 10px;
 }

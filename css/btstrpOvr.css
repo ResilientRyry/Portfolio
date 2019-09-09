@@ -20,7 +20,11 @@ body a{
 body a:hover{
   color: white;
 }
-ol, ul, dl{
+header ol, header ul, header dl{
     width: 100%;
     text-align: center;
+}
+main ol, main ul, main dl{
+    width: 100%;
+    text-align: left;
 }

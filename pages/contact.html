@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Ryan Tillman-French</title>
-    <!-- MY CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/btstrpOvr.css">
-    <!-- BOOTSTRAP -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Ryan Tillman-French</title>
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/btstrpOvr.css">
+  <!-- FONTAWESOME ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- BOOTSTRAP -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
   <body class="contact">
 
     <!-- HEADER Begin -->
@@ -26,11 +28,11 @@
         </nav>
       </section>
       <section class="deets">
-          <section class="row">
-          <!-- header image -->
-          <section class="container">
+        <section class="row">
+
+          <section>
             <h2>Contact Me!</h2>
-            <p>I am always reachable via email. Hope to here from you soon...</p>
+            <p>I am always reachable via email. Hope to hear from you soon...</p>
           </section>
 
         </section>
@@ -41,36 +43,61 @@
 
     <!-- CONTACT FORM BEGIN -->
     <section class="container">
-      <form  action="https://formspree.io/r.tillman.french@gmail.com" method="POST">
-        <section class="form-group">
-          <input class="form-control" type="text" name="name" placeholder="Full Name" required>
-        </section>
-        <section class="form-group">
-          <input class="form-control" type="text" name="number" placeholder="Number">
-        </section>
-        <section class="form-group">
-          <input class="form-control" type="email" name="email" placeholder="Email" required>
-        </section>
-        <section class="form-group">
-          <textarea class="form-control" name="message" required></textarea>
-        </section>
-        <button class="submit" type="submit" name="submit" value="Send">Submit</button>
-      </form>
+      <section class="col contactForm">
+        <form  action="https://formspree.io/r.tillman.french@gmail.com" method="POST">
+
+          <section class="form-group row">
+            <div class="col">
+              <input class="form-control" type="text" name="First-name" placeholder="Firstname" required>
+            </div>
+            <div class="col">
+              <input class="form-control" type="text" name="Last-name" placeholder="Lastname">
+            </div>
+          </section>
+
+          <section class="form-group row">
+            <div class="col">
+              <input class="form-control col" type="number" name="Number" placeholder="Number ex. 111-111-1111">
+            </div>
+            <div class="col">
+              <input class="form-control col" type="email" name="email" placeholder="Email" required>
+            </div>
+          </section>
+
+          <section class="form-group row">
+            <textarea class="form-control col" name="message" rows="10" cols="50" required></textarea>
+          </section>
+          <button class="submit" type="submit" value="Send">Submit</button>
+        </form>
+      </section>
     </section>
     <!-- CONTACT FORM END -->
 
     <footer class="container-fluid">
       <section class="row">
         <section class="col">
-          <ul>
-            <li> <a href="index.html">Home</a> </li>
-            <li> <a href="resume.html">Resume</a> </li>
-            <li> <a href="contact.html">Contact</a> </li>
-          </ul>
+          <section class="col socials">
+            <section class="col">
+              <a href="https://www.instagram.com/r.t.french/"><i class="fa fa-instagram"></i></a>
+              <span>Instagram</span>
+            </section>
+            <section class="col">
+              <a href="https://github.com/ResilientRyry"><i class="fa fa-github-square"></i></a>
+              <span>GitHub</span>
+            </section>
+            <section class="col">
+              <a href="https://twitter.com/FrenchTillman"><i class="fa fa-twitter-square"></i></a>
+              <span>Twitter</span>
+            </section>
+            <section class="col">
+              <a href="https://www.linkedin.com/in/ryantf/"><i class="fa fa-linkedin"></i></a>
+              <span>LinkedIn</span>
+            </section>
+          </section>
         </section>
-        <section class="col-6">
-          <p>I am always looking to increase my arsenol of skills.</p>
-          <p>"Ancora Imparo" ~ Michelangelo</p>
+        <section class="col">
+          <p>I am always looking to increase my arsenol of skills. Connect with me on all of my social platforms I would love to learn from you.</p>
+          <p>"Ancora Imparo"(Yet, I am learning.) ~ Michelangelo</p>
         </section>
         <section class="col logo">
           <img src="../images/logo.png" alt="">
