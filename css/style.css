@@ -55,6 +55,7 @@ html main .exp .comp {
   font-weight: bold;
   border: 2px solid white;
   padding: 10px;
+  margin-left: 20px;
 }
 html main .exp .carousel-control-prev, html main .exp .carousel-control-next {
   border: 2px solid black;
