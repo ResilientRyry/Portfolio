@@ -1,5 +1,5 @@
 /* h1, h2, h3, h4, img, p, a, ul, li{
-  display: block;
+display: block;
 } */
 html body {
   color: white;
@@ -9,14 +9,14 @@ html body {
   height: 100%;
   float: left;
 }
-html .contact {
-  text-align: center;
-}
-html .row {
-  width: 100%;
-}
 html header {
   margin-top: 50px;
+}
+html header nav.row {
+  width: 100%;
+}
+html header nav ul {
+  width: 100%;
 }
 html header nav li {
   list-style: none;
@@ -34,8 +34,30 @@ html header img {
 html header .container {
   background-color: black;
 }
-html .container .row.experience ul {
-  text-align: left;
+html main h4 {
+  background-color: black;
+  border: 2px solid white;
+  padding: 10px;
+}
+html main .about {
+  font-size: 30px;
+  padding: 200px;
+}
+html main .carousel-indicators {
+  margin: 0px;
+}
+html main .exp {
+  width: 50%;
+  margin: 20px 25%;
+}
+html main .exp .comp {
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 10px;
+}
+html main .exp .carousel-control-prev, html main .exp .carousel-control-next {
+  border: 2px solid black;
 }
 html footer {
   width: 80%;
