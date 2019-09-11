@@ -15,55 +15,63 @@
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
-  <body>
+<body>
 
-    <!-- HEADER Begin -->
-    <header class="container-fluid">
+  <!-- HEADER Begin -->
+  <header class="container-fluid">
+    <section class="row">
+      <nav class="row">
+        <ul>
+          <li> <a href="../index.html">Home</a> </li>
+          <li> <a href="resume.html">Resume</a> </li>
+          <li> <a href="contact.html">Contact Me</a> </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="deets">
       <section class="row">
-        <nav class="row">
-          <ul>
-            <li> <a href="../index.html">Home</a> </li>
-            <li> <a href="resume.html">Resume</a> </li>
-            <li> <a href="contact.html">Contact Me</a> </li>
-          </ul>
-        </nav>
-      </section>
-      <section class="deets">
-        <section class="row">
 
-          <section>
-            <h2>Resume</h2>
+        <section>
+          <h2>Resume</h2>
+        </section>
+
+      </section>
+    </section>
+  </header>
+
+  <!-- HEADER END -->
+
+  <main class="container" id="resume">
+
+    <section class="row">
+
+      <section class="col">
+        <img src="../images/RC-pro-pic.jpg" alt="Ryan Tillman-French">
+      </section>
+
+      <section class="col">
+        <h1>Ryan Tillman-French</h1>
+        <p><i class="fa fa-phone"></i>(313)425-6095</p>
+        <p><i class="fa fa-map-marker"></i>Boston, MA</p>
+        <p> <button class="btn btn-outline-secondary"> <a href="Resume.docx" download>Download Resume</a> </button> </p>
+      </section>
+
+    </section>
+
+    <section class="row">
+      <h2>Experience</h2>
+      <section class="accordion" id="accordionExample">
+        <section class="card">
+          <section class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                General Assembly
+              </button>
+            </h2>
           </section>
 
-        </section>
-      </section>
-    </header>
-
-    <!-- HEADER END -->
-
-    <main class="container" id="resume">
-
-      <section class="row">
-
-        <section class="col">
-          <img src="../images/RC-pro-pic.jpg" alt="Ryan Tillman-French">
-        </section>
-
-        <section class="col">
-          <h1>Ryan Tillman-French</h1>
-          <p><i class="fa fa-phone"></i>(313)425-6095</p>
-          <p><i class="fa fa-map-marker"></i>Boston, MA</p>
-          <p> <button class="btn btn-outline-secondary"> <a href="Resume.docx" download>Download Resume</a> </button> </p>
-        </section>
-
-      </section>
-
-      <section class="row">
-        <h2>Experience</h2>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <h3>General Assembly</h3>
-            <section class="details">
+          <section id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <section class="card-body">
               <p class="title">Teachers Assistant</p>
               <p><span class="location"><i class="fa fa-map-marker"></i>Boston, MA</span> January 2019 - present</p>
               <section class="description">
@@ -74,92 +82,115 @@
                 </ul>
               </section>
             </section>
-          </li>
-          <li class="list-group-item">
-            <h3>Houghton Mifflin Harcourt</h3>
-            <section class="details">
-              <p class="title">Web Applications Developer</p>
-              <p><span class="location"><i class="fa fa-map-marker"></i>Boston, MA</span> November 2018 - present</p>
-              <section class="description">
-                <ul class="list-group">
-                  <li class="list-group-item">Work within a team to produce technical solutions at an enterprise level</li>
-                  <li class="list-group-item">Create and improve on existing code, systems, and architecture</li>
-                  <li class="list-group-item">Leverage developer workflow tools such as Jenkins, Docker, Git, Postman, Slack, JIRA and Confluence</li>
-                  <li class="list-group-item">Provide detailed documentation on new and existing code</li>
-                  <li class="list-group-item">Created standardization guidelines and provided technical recommendations for business and marketing teams</li>
-                  <li class="list-group-item">Customize Craft CMS templates with PHP and Twig.js</li>
-                  <li class="list-group-item">Update frontend designs using SASS</li>
-                  <li class="list-group-item">Gather requirements from non-developer stakeholders to achieve marketing goals for web pages</li>
-                  <li class="list-group-item">Create and manage ElasticSearch queries</li>
-                </ul>
+          </section>
+          <section class="card">
+            <section class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Houghton Mifflin Harcourt
+                </button>
+              </h2>
+            </section>
+            <section id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <section class="card-body">
+                <p class="title">Web Applications Developer</p>
+                <p><span class="location"><i class="fa fa-map-marker"></i>Boston, MA</span> November 2018 - present</p>
+                <section class="description">
+                  <ul class="list-group">
+                    <li class="list-group-item">Work within a team to produce technical solutions at an enterprise level</li>
+                    <li class="list-group-item">Create and improve on existing code, systems, and architecture</li>
+                    <li class="list-group-item">Leverage developer workflow tools such as Jenkins, Docker, Git, Postman, Slack, JIRA and Confluence</li>
+                    <li class="list-group-item">Provide detailed documentation on new and existing code</li>
+                    <li class="list-group-item">Created standardization guidelines and provided technical recommendations for business and marketing teams</li>
+                    <li class="list-group-item">Customize Craft CMS templates with PHP and Twig.js</li>
+                    <li class="list-group-item">Update frontend designs using SASS</li>
+                    <li class="list-group-item">Gather requirements from non-developer stakeholders to achieve marketing goals for web pages</li>
+                    <li class="list-group-item">Create and manage ElasticSearch queries</li>
+                  </ul>
+                </section>
               </section>
             </section>
-          </li>
-          <li class="list-group-item">
-            <h3>Resilient Coders</h3>
-            <section class="details">
-              <p class="title">Full-Stack Software Enginner / Mentor</p>
-              <p><span class="location"><i class="fa fa-map-marker"></i>Boston, MA</span> May 2018 - present</p>
-              <section class="description">
-                <ul class="list-group">
-                  <li class="list-group-item">Develop and design websites for professionals and business through subcontracts gained via self-promotion or coworkers.</li>
-                  <li class="list-group-item">Complete team and individual assignments given daily by Senior Software Engineer that may include preparing code, correcting code, or designing new projects.</li>
-                  <li class="list-group-item">Solve complex web problems usually with code. Using best practices I would solve problems large and small on daily basis.</li>
-                  <li class="list-group-item">Provide code reviews and do pair programming with current cohort.</li>
-                </ul>
+            <section class="card">
+              <section class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Resilient Coders
+                  </button>
+                </h2>
               </section>
-            </section>
-          </li>
-        </ul>
-      </section>
-
-      <section class="row">
-        <h2>Volunteer</h2>
-
-      </section>
-
-      <section class="row">
-        <h2>Skills</h2>
-
-      </section>
-
-      <section class="row">
-        <h2>Education</h2>
-
-      </section>
-
-    </main>
-
-    <footer class="container-fluid">
-      <section class="row">
-        <section class="col">
-          <section class="col socials">
-            <section class="col">
-              <a href="https://www.instagram.com/r.t.french/"><i class="fa fa-instagram"></i><span> Instagram</span></a>
-            </section>
-            <section class="col">
-              <a href="https://github.com/ResilientRyry"><i class="fa fa-github-square"></i><span> GitHub</span></a>
-            </section>
-            <section class="col">
-              <a href="https://twitter.com/FrenchTillman"><i class="fa fa-twitter-square"></i><span> Twitter</span></a>
-            </section>
-            <section class="col">
-              <a href="https://www.linkedin.com/in/ryantf/"><i class="fa fa-linkedin"></i><span> LinkedIn</span></a>
+              <section id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <section class="card-body">
+                  <p class="title">Full-Stack Software Enginner / Mentor</p>
+                  <p><span class="location"><i class="fa fa-map-marker"></i>Boston, MA</span> May 2018 - present</p>
+                  <section class="description">
+                    <ul class="list-group">
+                      <li class="list-group-item">Develop and design websites for professionals and business through subcontracts gained via self-promotion or coworkers.</li>
+                      <li class="list-group-item">Complete team and insectionidual assignments given daily by Senior Software Engineer that may include preparing code, correcting code, or designing new projects.</li>
+                      <li class="list-group-item">Solve complex web problems usually with code. Using best practices I would solve problems large and small on daily basis.</li>
+                      <li class="list-group-item">Provide code reviews and do pair programming with current cohort.</li>
+                    </ul>
+                  </section>
+                </section>
+              </section>
             </section>
           </section>
         </section>
-        <section class="col">
-          <p>I am always looking to increase my arsenol of skills. Connect with me on all of my social platforms I would love to learn from you.</p>
-          <p>"Ancora Imparo"(Yet, I am learning.) ~ Michelangelo</p>
         </section>
-        <section class="col logo">
-          <img src="../images/logo.png" alt="">
         </section>
-      </section>
 
-    </footer>
+        <h2>Skills</h2>
+          <section class="row skills">
+            <section class="row">
+              <button type="button" class="btn btn-outline-info">JavaScript</button>
+              <button type="button" class="btn btn-outline-info">CSS</button>
+              <button type="button" class="btn btn-outline-info">HTML</button>
+              <button type="button" class="btn btn-outline-info">ES6</button>
+              <button type="button" class="btn btn-outline-info">OOP JavaScript</button>
+              <button type="button" class="btn btn-outline-info">React.js</button>
+              <button type="button" class="btn btn-outline-info">MongoDB</button>
+              <button type="button" class="btn btn-outline-info">Express</button>
+              <button type="button" class="btn btn-outline-info">API</button>
+            </section>
+          </section>
+          <section class="row">
 
-    <script src="../js/main.js"></script>
-    <script src="../js/style.js"></script>
-  </body>
-</html>
+          </section>
+        </main>
+
+        <footer class="container-fluid">
+          <section class="row">
+            <section class="col">
+              <section class="col socials">
+                <section class="col">
+                  <a href="https://www.instagram.com/r.t.french/"><i class="fa fa-instagram"></i><span> Instagram</span></a>
+                </section>
+                <section class="col">
+                  <a href="https://github.com/ResilientRyry"><i class="fa fa-github-square"></i><span> GitHub</span></a>
+                </section>
+                <section class="col">
+                  <a href="https://twitter.com/FrenchTillman"><i class="fa fa-twitter-square"></i><span> Twitter</span></a>
+                </section>
+                <section class="col">
+                  <a href="https://www.linkedin.com/in/ryantf/"><i class="fa fa-linkedin"></i><span> LinkedIn</span></a>
+                </section>
+              </section>
+            </section>
+            <section class="col">
+              <p>I am always looking to increase my arsenol of skills. Connect with me on all of my social platforms I would love to learn from you.</p>
+              <p>"Ancora Imparo"(Yet, I am learning.) ~ Michelangelo</p>
+            </section>
+            <section class="col logo">
+              <img src="../images/logo.png" alt="">
+            </section>
+          </section>
+
+        </footer>
+
+        <script src="../js/main.js"></script>
+        <script src="../js/style.js"></script>
+        <!-- Bootstrap.js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </body>
+      </html>

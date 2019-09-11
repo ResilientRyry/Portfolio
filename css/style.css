@@ -34,10 +34,16 @@ html header img {
 html header .container {
   background-color: black;
 }
+html main {
+  border-radius: 2%;
+}
 html main h4 {
   background-color: black;
   border: 2px solid white;
   padding: 10px;
+}
+html main section {
+  border-radius: 2%;
 }
 html main .about {
   font-size: 30px;
@@ -86,7 +92,6 @@ html main .projects .projectBox img {
 }
 html .gallery h5 {
   margin: 10px 20%;
-  text-decoration: underline;
 }
 html .gallery button.btn {
   background-color: black;
@@ -138,6 +143,9 @@ html .interviews li a {
   color: white;
   text-decoration: none;
 }
+html .interviews .btn-outline-dark:hover {
+  background-color: black;
+}
 html footer {
   width: 80%;
 }
@@ -151,6 +159,9 @@ html footer img {
   margin-left: 40%;
 }
 
+#resume section {
+  border-radius: 2%;
+}
 #resume i {
   margin-right: 10px;
 }
@@ -192,24 +203,45 @@ html footer img {
   border-radius: 50%;
   margin: 0px 20%;
 }
-#resume .details {
-  display: none;
+#resume .accordion {
+  width: 100%;
 }
-#resume .details .location {
-  color: grey;
-  font-style: italic;
-  margin-right: 10px;
+#resume .accordion button:focus {
+  box-shadow: none;
 }
-#resume .details .location:hover {
+#resume .accordion .card-body {
+  color: white;
+  background-color: black;
+}
+#resume .accordion .card-body .list-group-item {
+  color: black;
+}
+#resume .skills {
+  background-color: white;
+}
+#resume .skills .row {
+  margin-left: 100px;
+}
+#resume .skills .row button {
+  width: 10%;
+  margin: 10px 95px;
   color: #42C5E4;
+  border-color: #42C5E4;
 }
-#resume .details .title {
-  margin: 0px;
-  padding: 0px;
+#resume .skills .row button:hover {
+  color: white;
+  background-color: #42C5E4;
 }
-#resume .details .description {
-  width: 50%;
-  margin: 0px 25%;
+#resume .skills .row button:focus {
+  box-shadow: none;
+}
+
+#contact section {
+  border-radius: 2%;
+}
+#contact input, #contact textarea {
+  color: white;
+  background-color: black;
 }
 
 .deets .row section {
@@ -221,15 +253,19 @@ html footer img {
   padding: 25px;
 }
 .contactForm button {
-  margin-left: 45%;
+  margin-left: 50%;
   font-size: 18px;
   color: white;
   background-color: black;
 }
 
 form textarea {
-  height: 300px;
+  color: #42C5E4;
   margin: 0px 10px;
+  background-image: url("../images/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /*# sourceMappingURL=style.css.map */

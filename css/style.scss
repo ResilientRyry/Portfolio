@@ -43,10 +43,15 @@ html {
 		}
 	}
 	main {
+		border-radius: 2%;
+
 		h4{
 			background-color: black;
 			border: 2px solid white;
 			padding: 10px;
+		}
+		section{
+			border-radius: 2%;
 		}
 		.about{
 			font-size: 30px;
@@ -104,7 +109,6 @@ html {
 
 		h5{
 			margin: 10px 20%;
-			text-decoration: underline;
 		}
 
 		button.btn{
@@ -113,7 +117,6 @@ html {
 
 		.modal-dialog{
 			max-width: 750px;
-			// height: 450px;
 
 			.modal-body{
 				height: 500px;
@@ -169,6 +172,9 @@ html {
 				text-decoration: none;
 			}
 		}
+		.btn-outline-dark:hover {
+			background-color: black;
+		}
 	}
 
 	footer{
@@ -187,6 +193,9 @@ html {
 }
 // Resume CSS
 #resume {
+	section{
+		border-radius: 2%;
+	}
 	i{
 		margin-right: 10px;
 	}
@@ -231,29 +240,56 @@ html {
 			margin: 0px 20%;
 		}
 	}
-	.details{
-		display: none;
 
-		.location{
-			color: grey;
-			font-style: italic;
-			margin-right: 10px;
+	.accordion{
+		width: 100%;
+
+		button:focus{
+			box-shadow: none;
 		}
-		.location:hover{
+
+		.card-body{
+			color: white;
+			background-color: black;
+
+			.list-group-item{
+				color: black;
+			}
+		}
+	}
+
+	.skills {
+		background-color: white;
+
+		.row{
+			margin-left: 100px;
+			button{
+			width: 10%;
+			margin: 10px 95px;
 			color: $blue;
+			border-color: $blue;
 		}
-		.title{
-			margin: 0px;
-			padding: 0px;
+		button:hover{
+			color: white;
+			background-color: $blue;
 		}
-		.description{
-			width: 50%;
-			margin: 0px 25%;
+		button:focus{
+			box-shadow: none;
 		}
+	}
 	}
 
 }
 // Contacts CSS
+#contact{
+	section{
+		border-radius: 2%;
+	}
+	input, textarea{
+		color: white;
+		background-color: black;
+	}
+}
 .deets .row section{
 	width: 100%;
 	text-align: center;
@@ -262,13 +298,17 @@ html {
 	padding: 25px;
 
 	button{
-		margin-left: 45%;
+		margin-left: 50%;
 		font-size: 18px;
 		color: white;
 		background-color: black;
 	}
 }
 form textarea{
-	height: 300px;
+	color: $blue;
 	margin: 0px 10px;
+	background-image: url('../images/logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
