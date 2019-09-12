@@ -16,22 +16,68 @@ html {
 		height: 100%;
 		float: left;
 	}
-	header{
+	#header{
 		margin-top: 50px;
 
-		nav.row{
+		nav{
 			width: 100%;
+
+			.show>.btn-info.dropdown-toggle {
+				color: $blue;
+				background-color: white;
+				border-color: $blue;
+			}
+
+			.dropdown-item{
+				color: $blue;
+			}
+
+			.dropdown-item:active{
+				color: $blue;
+				background-color: black;
+			}
+			.dropdown-item:hover{
+				background-color: rgba(0,0,0,0.8)
+			}
+
+			.btn-group{
+				width: 15%;
+				margin-left: 13.5%;
+
+				.btn-info{
+					color: $blue;
+					background-color: black;
+					border-color: $blue;
+
+				}
+				.btn-info:active{
+					color: $blue;
+					background-color: white;
+					border-color: $blue;
+				}
+
+				.contact{
+					width: 100%;
+
+					a{
+						width: 100%;
+						text-decoration: none;
+					}
+					a:hover{
+						color: $blue;
+						background-color: white;
+						border-color: $blue;
+					}
+				}
+				.contact:hover{
+					color: $blue;
+					background-color: white;
+					border-color: $blue;
+				}
+			}
 		}
-		nav ul{
-			width: 100%;
-		}
-		nav li{
-			list-style: none;
-			display: inline-block;
-			font-size: 20px;
-			float: left;
-			width: 33.33%
-		}
+
+
 		img{
 			width: 50%;
 			height: 550px;
@@ -264,19 +310,19 @@ html {
 		.row{
 			margin-left: 100px;
 			button{
-			width: 10%;
-			margin: 10px 95px;
-			color: $blue;
-			border-color: $blue;
+				width: 10%;
+				margin: 10px 95px;
+				color: $blue;
+				border-color: $blue;
+			}
+			button:hover{
+				color: white;
+				background-color: $blue;
+			}
+			button:focus{
+				box-shadow: none;
+			}
 		}
-		button:hover{
-			color: white;
-			background-color: $blue;
-		}
-		button:focus{
-			box-shadow: none;
-		}
-	}
 	}
 
 }

@@ -9,29 +9,65 @@ html body {
   height: 100%;
   float: left;
 }
-html header {
+html #header {
   margin-top: 50px;
 }
-html header nav.row {
+html #header nav {
   width: 100%;
 }
-html header nav ul {
+html #header nav .show > .btn-info.dropdown-toggle {
+  color: #42C5E4;
+  background-color: white;
+  border-color: #42C5E4;
+}
+html #header nav .dropdown-item {
+  color: #42C5E4;
+}
+html #header nav .dropdown-item:active {
+  color: #42C5E4;
+  background-color: black;
+}
+html #header nav .dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+html #header nav .btn-group {
+  width: 15%;
+  margin-left: 13.5%;
+}
+html #header nav .btn-group .btn-info {
+  color: #42C5E4;
+  background-color: black;
+  border-color: #42C5E4;
+}
+html #header nav .btn-group .btn-info:active {
+  color: #42C5E4;
+  background-color: white;
+  border-color: #42C5E4;
+}
+html #header nav .btn-group .contact {
   width: 100%;
 }
-html header nav li {
-  list-style: none;
-  display: inline-block;
-  font-size: 20px;
-  float: left;
-  width: 33.33%;
+html #header nav .btn-group .contact a {
+  width: 100%;
+  text-decoration: none;
 }
-html header img {
+html #header nav .btn-group .contact a:hover {
+  color: #42C5E4;
+  background-color: white;
+  border-color: #42C5E4;
+}
+html #header nav .btn-group .contact:hover {
+  color: #42C5E4;
+  background-color: white;
+  border-color: #42C5E4;
+}
+html #header img {
   width: 50%;
   height: 550px;
   border-radius: 50%;
   margin: 0px 25%;
 }
-html header .container {
+html #header .container {
   background-color: black;
 }
 html main {

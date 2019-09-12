@@ -17,16 +17,37 @@
 <body>
 
   <!-- HEADER Begin -->
-  <header class="container-fluid">
-    <section class="row">
-      <nav class="row">
-        <ul>
-          <li> <a href="index.html">Home</a> </li>
-          <li> <a href="pages/resume.html">Resume</a> </li>
-          <li> <a href="pages/contact.html">Contact Me</a> </li>
-        </ul>
-      </nav>
-    </section>
+  <header class="container-fluid" id="header">
+    <nav>
+      <section class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home
+        </button>
+        <section class="dropdown-menu">
+          <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="#about">About</a>
+          <a class="dropdown-item" href="#experience">Key Experiences</a>
+          <a class="dropdown-item" href="#extras">Extras</a>
+          <!-- <section class="dropdown-sectionider"></section> -->
+          <!-- <a class="dropdown-item" href="#">Separated link</a> -->
+        </section>
+      </section>
+
+      <section class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Resume
+        </button>
+        <section class="dropdown-menu">
+          <a class="dropdown-item" href="pages/resume.html">Resume</a>
+          <a class="dropdown-item" href="Resume.docx" download> Download Resume</a>
+        </section>
+      </section>
+
+      <section class="btn-group">
+        <a href="pages/contact.html" class="contact"><button type="button" class="btn btn-info contact" name="button">Contact Me </button></a>
+      </section>
+
+    </nav>
     <section class="deets">
       <section class="row">
         <!-- header image -->
@@ -45,11 +66,11 @@
 
   <!-- HEADER END -->
   <main class="container">
-    <section class="about row">
+    <section class="about row" id="about">
       <h4>About me</h4>
       <p>A Detroit native born with a passion for proving naysayers wrong. I moved 800 miles away to Boston, craving a challenge and with the hopes of beginning a career to help break the chains of poverty in my family. I began my Softeware Engineering career at Resilient Coders and joined Houghton Mifflin Harcourt as a Web Applications Developer shortly after. The determination to make a better life for my family, my competitive nature, and passion for learning has led me to sail on a journey to become a great Software Engineer.</p>
     </section>
-    <section class="row">
+    <section class="row" id="experience">
       <h4>Key Experiences</h4>
       <section class="experience col">
         <section id="carouselExampleIndicators" class="carousel slide container-fluid" data-ride="carousel">
@@ -92,7 +113,7 @@
         </section>
       </section>
     </section>
-    <section class="row">
+    <section class="row" id="projects">
       <section class="projects col">
         <h4><span>Projects</span></h4>
         <section class="projectBox">
@@ -117,7 +138,7 @@
         </section>
       </section>
     </section>
-    <section class="row">
+    <section class="row" id="extras">
       <h4>Extras</h4>
       <section class="gallery row">
         <h5>Check out this small gallery.</h5>
@@ -207,7 +228,7 @@
     <h5>Check out these interviews I was featured in.</h5>
     <ul>
       <li class="btn btn-outline-dark"> <a href="https://www.nbcnews.com/news/us-news/need-college-degree-get-job-these-companies-say-skills-matter-n1001526" target="_blank">Need a college degree to get a job? These companies say skills matter more</a> </li>
-      <li class="btn btn-outline-dark"> <a href="https://www.steamboston.com/ryan-tillman-french-importance-of-sectionersity-in-tech-and-becoming-a-resilient-coder/">Importance of sectionersity in Tech and Becoming a Resilient Coder</a> </li>
+      <li class="btn btn-outline-dark"> <a href="https://www.steamboston.com/ryan-tillman-french-importance-of-sectionersity-in-tech-and-becoming-a-resilient-coder/">Importance of diversity in Tech and Becoming a Resilient Coder</a> </li>
     </ul>
   </section>
 </section>
@@ -234,7 +255,7 @@
     <section class="col">
       <p>I am always looking to increase my arsenol of skills. Connect with me on all of my social platforms I would love to learn from you.</p>
       <p>"Ancora Imparo"(Yet, I am learning.) ~ Michelangelo</p>
-      <i>This website was made with: HTML, CSS, Vanilla JS, JQuery, Bootstrap, & SASS</i>
+      <i>This website was made with: HTML, Vanilla JS, JQuery, Bootstrap, & SASS</i>
     </section>
     <section class="col logo">
       <img src="images/logo.png" alt="">

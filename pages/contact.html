@@ -17,14 +17,37 @@
   <body class="contact">
 
     <!-- HEADER Begin -->
-    <header class="container-fluid">
+    <header class="container-fluid" id="header">
       <section class="row">
-        <nav class="row">
-          <ul>
-            <li> <a href="../index.html">Home</a> </li>
-            <li> <a href="resume.html">Resume</a> </li>
-            <li> <a href="contact.html">Contact Me</a> </li>
-          </ul>
+        <nav>
+          <section class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Home
+            </button>
+            <section class="dropdown-menu">
+              <a class="dropdown-item" href="../index.html">Home</a>
+              <a class="dropdown-item" href="../index.html#about">About</a>
+              <a class="dropdown-item" href="../index.html#experience">Key Experiences</a>
+              <a class="dropdown-item" href="../index.html#extras">Extras</a>
+              <!-- <section class="dropdown-sectionider"></section> -->
+              <!-- <a class="dropdown-item" href="#">Separated link</a> -->
+            </section>
+          </section>
+
+          <section class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Resume
+            </button>
+            <section class="dropdown-menu">
+              <a class="dropdown-item" href="resume.html">Resume</a>
+              <a class="dropdown-item" href="Resume.docx" download> Download Resume</a>
+            </section>
+          </section>
+
+          <section class="btn-group">
+            <a href="contact.html" class="contact"><button type="button" class="btn btn-info contact" name="button">Contact Me </button></a>
+          </section>
+
         </nav>
       </section>
       <section class="deets">
@@ -95,6 +118,7 @@
         <section class="col">
           <p>I am always looking to increase my arsenol of skills. Connect with me on all of my social platforms I would love to learn from you.</p>
           <p>"Ancora Imparo"(Yet, I am learning.) ~ Michelangelo</p>
+          <i>This website was made with: HTML, Vanilla JS, JQuery, Bootstrap, & SASS</i>
         </section>
         <section class="col logo">
           <img src="../images/logo.png" alt="">
@@ -105,5 +129,9 @@
 
     <script src="../js/main.js"></script>
     <script src="../js/style.js"></script>
+    <!-- Bootstrap.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
