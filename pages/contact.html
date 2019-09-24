@@ -5,63 +5,35 @@
   <title>Ryan Tillman-French</title>
   <!-- MY CSS -->
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/responsive.css">
-  <link rel="stylesheet" href="../css/btstrpOvr.css">
   <!-- FONTAWESOME ICONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- BOOTSTRAP -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
   <body class="contact">
 
-    <!-- HEADER Begin -->
-    <header class="container-fluid" id="header">
-      <section class="row">
-        <nav>
-          <section class="btn-group">
-            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Home
-            </button>
-            <section class="dropdown-menu">
-              <a class="dropdown-item" href="../index.html">Home</a>
-              <section class="dropdown-divider"></section>
-              <a class="dropdown-item" href="../index.html#about">About</a>
-              <a class="dropdown-item" href="../index.html#experience">Key Experiences</a>
-              <a class="dropdown-item" href="../index.html#extras">Extras</a>
-              <!-- <section class="dropdown-sectionider"></section> -->
-              <!-- <a class="dropdown-item" href="#">Separated link</a> -->
-            </section>
-          </section>
-
-          <section class="btn-group">
-            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Resume
-            </button>
-            <section class="dropdown-menu">
-              <a class="dropdown-item" href="resume.html">Resume</a>
-              <section class="dropdown-divider"></section>
-              <a class="dropdown-item" href="Resume.docx" download> Download Resume</a>
-            </section>
-          </section>
-
-          <section class="btn-group">
-            <a href="contact.html" class="contact"><button type="button" class="btn btn-info contact" name="button">Contact Me </button></a>
-          </section>
-
-        </nav>
-      </section>
-      <section class="deets">
-        <section class="row">
-
-            <h2 class="w-100 center">Contact Me!</h2>
-            <p>I am always reachable via email. Hope to hear from you soon...</p>
-
+    <!-- HEADER BEGIN -->
+    <header>
+      <nav>
+        <section class="navigation">
+          <a href="../index.html"><button class="btn btn-outline-info">Home</button></a>
+          <a href="resume.html"><button class="btn btn-outline-info">Resume</button></a>
+          <a href="projects.html"><button class="btn btn-outline-info">Projects</button></a>
+          <a href="contact.html"><button class="btn btn-outline-info">Contact</button></a>
         </section>
-      </section>
-    </header>
+        <!-- <p class="menu2">Menu</p> -->
+        <p class="menu">Menu</p>
+      </nav>
 
+      <section class="deets">
+        <h1>Ryan Tillman-French</h1>
+        <h4>Software Engineer</h4>
+      </section>
+
+    </header>
     <!-- HEADER END -->
 
     <!-- CONTACT FORM BEGIN -->
@@ -80,7 +52,7 @@
 
           <section class="form-group row">
             <section class="col">
-              <input class="form-control col" type="number" name="Number" placeholder="Number ex. 111-111-1111">
+              <input class="form-control col" type="text" name="Number" placeholder="Number ex. 111-111-1111">
             </section>
             <section class="col">
               <input class="form-control col" type="email" name="email" placeholder="Email" required>
@@ -88,52 +60,57 @@
           </section>
 
           <section class="form-group row">
-            <textarea class="form-control col" name="message" rows="10" cols="50" required></textarea>
+            <textarea class="form-control" name="message" rows="10" cols="50" required></textarea>
           </section>
 
           <section class="form-group row">
-            <button class="submit" type="submit" value="Send">Submit</button>
+            <button class="submit btn btn-info" type="submit" value="Send">Submit</button>
           </section>
         </form>
       </section>
     </section>
     <!-- CONTACT FORM END -->
 
-    <footer class="container-fluid">
+    <!-- FOOTER BEGIN -->
+    <footer class="container">
       <section class="row">
-        <section class="col">
-          <section class="col socials">
-            <section class="col">
-              <a href="https://www.instagram.com/r.t.french/"><i class="fa fa-instagram"></i><span> Instagram</span></a>
-            </section>
-            <section class="col">
-              <a href="https://github.com/ResilientRyry"><i class="fa fa-github-square"></i><span> GitHub</span></a>
-            </section>
-            <section class="col">
-              <a href="https://twitter.com/FrenchTillman"><i class="fa fa-twitter-square"></i><span> Twitter</span></a>
-            </section>
-            <section class="col">
-              <a href="https://www.linkedin.com/in/ryantf/"><i class="fa fa-linkedin"></i><span> LinkedIn</span></a>
+        <section class="container">
+          <section class="socials">
+            <section class="container">
+              <section class="row">
+                <a href="https://www.instagram.com/r.t.french/"><i class="fa fa-instagram"></i><span> IG</span></a>
+              </section>
+              <section class="row">
+                <a href="https://github.com/ResilientRyry"><i class="fa fa-github-square"></i><span> GitHub</span></a>
+              </section>
+              <section class="row">
+                <a href="https://twitter.com/FrenchTillman"><i class="fa fa-twitter-square"></i><span> Twitter</span></a>
+              </section>
+              <section class="row">
+                <a href="https://www.linkedin.com/in/ryantf/"><i class="fa fa-linkedin"></i><span> LinkedIn</span></a>
+              </section>
             </section>
           </section>
-        </section>
-        <section class="col">
-          <p>I am always looking to increase my arsenol of skills. Connect with me on all of my social platforms I would love to learn from you.</p>
-          <p>"Ancora Imparo"(Yet, I am learning.) ~ Michelangelo</p>
-          <i>This website was made with: HTML, Vanilla JS, JQuery, Bootstrap, & SASS</i>
-        </section>
-        <section class="col logo">
-          <img src="../images/logo.png" alt="">
+          <section class="qoute">
+            <p>I am always looking to increase my arsenol of skills. Connect with me on all of my social platforms I would love to learn from you.</p>
+            <p>"Ancora Imparo"(Yet, I am learning.) ~ Michelangelo</p>
+            <i>This website was made with: HTML, Vanilla JS, JQuery, Bootstrap, & SASS</i>
+          </section>
+          <section id="logo">
+            <img src="../images/logo.png" alt="">
+          </section>
         </section>
       </section>
 
     </footer>
-
-    <script src="../js/main.js"></script>
-    <script src="../js/style.js"></script>
-    <!-- Bootstrap.js -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- FOOTER END -->
   </body>
-</html>
+  <!-- Main JS -->
+  <script src="../js/main.js"></script>
+  <!-- Bootstrap.js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </html>

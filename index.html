@@ -5,272 +5,131 @@
   <title>Ryan Tillman-French</title>
   <!-- MY CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/btstrpOvr.css">
   <!-- FONTAWESOME ICONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- BOOTSTRAP -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
-<body>
-
-  <!-- HEADER Begin -->
-  <header class="container-fluid" id="header">
+<body id="index">
+  <!-- HEADER BEGIN -->
+  <header>
     <nav>
-      <section class="btn-group">
-        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Home
-        </button>
-        <section class="dropdown-menu">
-          <a class="dropdown-item" href="index.html">Home</a>
-          <section class="dropdown-divider"></section>
-          <a class="dropdown-item" href="#about">About</a>
-          <a class="dropdown-item" href="#experience">Key Experiences</a>
-          <a class="dropdown-item" href="#extras">Extras</a>
-          <!-- <section class="dropdown-sectionider"></section> -->
-          <!-- <a class="dropdown-item" href="#">Separated link</a> -->
-        </section>
+      <section class="navigation">
+        <a href="index.html"><button class="btn btn-outline-info">Home</button></a>
+        <a href="pages/resume.html"><button class="btn btn-outline-info">Resume</button></a>
+        <a href="pages/projects.html"><button class="btn btn-outline-info">Projects</button></a>
+        <a href="pages/contact.html"><button class="btn btn-outline-info">Contact</button></a>
       </section>
-
-      <section class="btn-group">
-        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Resume
-        </button>
-        <section class="dropdown-menu">
-          <a class="dropdown-item" href="pages/resume.html">Resume</a>
-          <section class="dropdown-divider"></section>
-          <a class="dropdown-item" href="Resume.docx" download> Download Resume</a>
-        </section>
-      </section>
-
-      <section class="btn-group">
-        <a href="pages/contact.html" class="contact"><button type="button" class="btn btn-info contact" name="button">Contact Me </button></a>
-      </section>
-
+      <!-- <p class="menu2">Menu</p> -->
+      <p class="menu">Menu</p>
     </nav>
+
     <section class="deets">
-      <section class="row">
-        <!-- header image -->
-        <section class="container">
-          <img src="images/selfie.jpg" alt="Ryan Tillman-French">
-        </section>
-        <!-- header name and title -->
-        <section class="row">
-          <h1>Ryan Tillman-French</h1>
-          <p>Software Engineer</p>
-        </section>
-
-      </section>
+      <h1>Ryan Tillman-French</h1>
+      <h4>Software Engineer</h4>
     </section>
+
   </header>
-
   <!-- HEADER END -->
+
+  <!-- MAIN BEGIN -->
   <main class="container">
-    <section class="about row" id="about">
+    <section class="about">
       <h4>About me</h4>
-      <p>A Detroit native born with a passion for proving naysayers wrong. I moved 800 miles away to Boston, craving a challenge and with the hopes of beginning a career to help break the chains of poverty in my family. I began my Softeware Engineering career at Resilient Coders and joined Houghton Mifflin Harcourt as a Web Applications Developer shortly after. The determination to make a better life for my family, my competitive nature, and passion for learning has led me to sail on a journey to become a great Software Engineer.</p>
+      <p>A Detroit native born with a passion for proving naysayers wrong. I moved 800 miles away to Boston, craving a challenge and with the hopes of beginning a career to help break the chains of poverty in my family. I began my Software Engineering career at Resilient Coders and joined Houghton Mifflin Harcourt as a Web Applications Developer shortly after. The determination to make a better life for my family, my competitive nature, and passion for learning has led me to sail on a journey to become a great Software Engineer.</p>
     </section>
-    <section class="row" id="experience">
-      <h4>Key Experiences</h4>
-      <section class="experience col">
-        <section id="carouselExampleIndicators" class="carousel slide container-fluid" data-ride="carousel">
+    <section class="interviews">
+      <h4>Interviews</h4>
+      <section class="carouselContainer">
+        <section id="carouselCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselCaptions" data-slide-to="2"></li>
           </ol>
           <section class="carousel-inner">
             <section class="carousel-item active">
-              <section class="exp">
-                <p class="col-11 comp">Houghton Mifflin Harcourt</p>
-                <p>Web Applications Developer <i>(November 2018 - present)</i> </p>
-                <p>My first position at a large company. I gained a lot of insight an experience on the corporate side of software engineering. I had to adjust to all of the meetings and also learned how to work on an agile team. One of my biggest takeaways is learning to communicate with non-technical team members.</p>
+              <img src="images/interviews/IMG_1315.JPG" class="d-block w-100" alt="...">
+              <section class="carousel-caption">
+                <h5>STEAM Boston</h5>
+                <p>Importance of diversity in Tech and Becoming a Resilient Coder. <a href="https://www.steamboston.com/ryan-tillman-french-importance-of-sectionersity-in-tech-and-becoming-a-resilient-coder/" target="_blank">Read Here</a></p>
               </section>
             </section>
             <section class="carousel-item">
-              <section class="exp">
-                <p class="col-11 comp">Coding with Kidz</p>
-                <p>Teacher <i>(October 2018 - December 2018)</i> </p>
-                <p>My very first attempt at teaching coding concepts. I worked with a group of 8 kindergarteners, I would help them set their computers up at the beginning of class and rotate between board games and Scratch(MIT) to get them to understand the building blocks of code. Biggest takeaways were patience and creativity when dealing with new people in tech.</p>
+              <img src="images/interviews/Lanahan_Ryan.jpg" class="d-block w-100" alt="...">
+              <section class="carousel-caption">
+                <h5>An article by Lawrence Lanahan (picked up by NBC)</h5>
+                <p>Need a college degree to get a job? These companies say skills matter more. <a href="https://www.nbcnews.com/news/us-news/need-college-degree-get-job-these-companies-say-skills-matter-n1001526">Read Here</a></p>
               </section>
             </section>
             <section class="carousel-item">
-              <section class="exp">
-                <p class="col-11 comp">Resilient Coders</p>
-                <p>Full-Stack Software Engineer <i>(May 2018 - present)</i> </p>
-                <p>My first step into software engineering. I gained so much from Resilient Coders from my pratical coding skills to my soft skills, such as learning how to learn. Here is where I proved I had the chops to be a great engineer. I made it through an intense 14 week Full-stack JavaScript course and later became a mentor for all of the following cohorts. Biggest takeaways are learning how I learn and time management.</p>
+              <img src="images/goodgirlspod/GGPsmall.jpeg" class="d-block w-100" alt="...">
+              <section class="carousel-caption">
+                <h5>Good Girls Podcast on the Audio Wave Network</h5>
+                <p>A small conversation of my journey into tech and diversity. <a href="https://soundcloud.com/thegoodgirlspod/good-girls-get-touchyand-techy#t=40:00">Listen here</a></p>
               </section>
             </section>
           </section>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
         </section>
       </section>
     </section>
-    <section class="row" id="projects">
-      <section class="projects col">
-        <h4><span>Projects</span></h4>
-        <section class="projectBox">
-          <section>
-            <p>Coming Soon...</p>
-          </section>
-          <section>
-            <p>Coming Soon...</p>
-          </section>
-          <section>
-            <a href="https://food-express1.herokuapp.com/" target="_blank">
-              <img src="images/projects/food.png" alt="">
-              <p>Food Express - API, JS, Express, MongoDB</p>
-            </a>
-          </section>
-          <section>
-            <a href="https://resilientryry.github.io/war/" target="_blank">
-              <img src="images/projects/gameSnapshot.png" alt="">
-              <p>I declare War game - Vanilla JS</p>
-            </a>
-          </section>
-        </section>
-      </section>
-    </section>
-    <section class="row" id="extras">
-      <h4>Extras</h4>
-      <section class="gallery row">
-        <h5>Check out this small gallery.</h5>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-          See Gallery
-        </button>
+    <!-- <section class="gallery">
+      <h4>Gallery</h4>
+    </section> -->
+  </main>
+  <!-- MAIN END -->
 
-        <!-- Modal -->
-        <section class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <section class="modal-dialog" role="document">
-            <section class="modal-content">
-              <section class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Gallery</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </section>
-              <section class="modal-body">
-                <section class="bd-example">
-                  <section id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                      <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                    </ol>
-                    <section class="carousel-inner">
-                      <section class="carousel-item active">
-                        <img src="images/RC/IMG_0799.PNG" class="d-block w-100" alt="...">
-                        <section class="carousel-caption d-none d-md-block">
-                          <h5>Resilient Coders Demo Day</h5>
-                          <p>On this day I presented my final poject (a VR classrom) in front of Resilient Coder hiring partners, friends, and family.</p>
-                        </section>
-                      </section>
-                      <section class="carousel-item">
-                        <img src="images/RC/tugg.jpeg" class="d-block w-100" alt="...">
-                        <section class="carousel-caption d-none d-md-block">
-                          <h5>TUGG</h5>
-                          <p>A night full of celebration. I helped Resilient Coders bring home the first place reward at a donation event called TUGG. (Resilient Coders is always a great investment if you want to contribute to changing lives for the better.)</p>
-                        </section>
-                      </section>
-                      <section class="carousel-item">
-                        <img src="images/events/20180906_194750.jpg" class="d-block w-100" alt="...">
-                        <section class="carousel-caption d-none d-md-block">
-                          <h5>Inbound 2018</h5>
-                          <p>My first time at Inbound. Meet some really great people and got to watch/listen to some awsome speakers. (Can't forget about the fun photos.)</p>
-                        </section>
-                      </section>
-                      <section class="carousel-item">
-                        <img src="images/volunteering/IMG_0579.PNG" class="d-block w-100" alt="...">
-                        <section class="carousel-caption d-none d-md-block">
-                          <h5>Free Software Foundation</h5>
-                          <p>I love volunteering for a great cause and so I volunteer two times a year at the FSF. This is my first time volunteering and we stuffed envelopes at a record speed.</p>
-                        </section>
-                      </section>
-                      <section class="carousel-item">
-                        <img src="images/volunteering/IMG_1577.JPG" class="d-block w-100" alt="...">
-                        <section class="carousel-caption d-none d-md-block">
-                        <h5>Backpack Drive</h5>
-                          <p>For as much success I have I beleive I should give back just as much. With that in mind I organized and completed the first of many backpack drives back home in Detroit.</p>
-                        </section>
-                      </section>
-                    </section>
-                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </section>
-                </section>
-              </section>
-              <section class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal"> <a href="gallery.html">See More</a> </button> -->
-              </section>
+  <!-- FOOTER BEGIN -->
+  <footer class="container">
+    <section class="row">
+      <section class="container">
+        <section class="socials">
+          <section class="container">
+            <section class="row">
+              <a href="https://www.instagram.com/r.t.french/"><i class="fa fa-instagram"></i><span> IG</span></a>
+            </section>
+            <section class="row">
+              <a href="https://github.com/ResilientRyry"><i class="fa fa-github-square"></i><span> GitHub</span></a>
+            </section>
+            <section class="row">
+              <a href="https://twitter.com/FrenchTillman"><i class="fa fa-twitter-square"></i><span> Twitter</span></a>
+            </section>
+            <section class="row">
+              <a href="https://www.linkedin.com/in/ryantf/"><i class="fa fa-linkedin"></i><span> LinkedIn</span></a>
             </section>
           </section>
         </section>
-
-      </section>
-  <section class="interviews row">
-    <h5>Check out these interviews I was featured in.</h5>
-    <ul>
-      <li class="btn btn-outline-dark"> <a href="https://www.nbcnews.com/news/us-news/need-college-degree-get-job-these-companies-say-skills-matter-n1001526" target="_blank">Need a college degree to get a job? These companies say skills matter more</a> </li>
-      <li class="btn btn-outline-dark"> <a href="https://www.steamboston.com/ryan-tillman-french-importance-of-sectionersity-in-tech-and-becoming-a-resilient-coder/">Importance of diversity in Tech and Becoming a Resilient Coder</a> </li>
-    </ul>
-  </section>
-</section>
-</main>
-
-<footer class="container-fluid">
-  <section class="row">
-    <section class="col">
-      <section class="col socials">
-        <section class="col">
-          <a href="https://www.instagram.com/r.t.french/"><i class="fa fa-instagram"></i><span> Instagram</span></a>
+        <section class="qoute">
+          <p>I am always looking to increase my arsenol of skills. Connect with me on all of my social platforms I would love to learn from you.</p>
+          <p>"Ancora Imparo"(Yet, I am learning.) ~ Michelangelo</p>
+          <i>This website was made with: HTML, Vanilla JS, JQuery, Bootstrap, & SASS</i>
         </section>
-        <section class="col">
-          <a href="https://github.com/ResilientRyry"><i class="fa fa-github-square"></i><span> GitHub</span></a>
-        </section>
-        <section class="col">
-          <a href="https://twitter.com/FrenchTillman"><i class="fa fa-twitter-square"></i><span> Twitter</span></a>
-        </section>
-        <section class="col">
-          <a href="https://www.linkedin.com/in/ryantf/"><i class="fa fa-linkedin"></i><span> LinkedIn</span></a>
+        <section id="logo">
+          <img src="images/logo.png" alt="">
         </section>
       </section>
     </section>
-    <section class="col">
-      <p>I am always looking to increase my arsenol of skills. Connect with me on all of my social platforms I would love to learn from you.</p>
-      <p>"Ancora Imparo"(Yet, I am learning.) ~ Michelangelo</p>
-      <i>This website was made with: HTML, Vanilla JS, JQuery, Bootstrap, & SASS</i>
-    </section>
-    <section class="col logo">
-      <img src="images/logo.png" alt="">
-    </section>
-  </section>
 
-</footer>
-
+  </footer>
+  <!-- FOOTER END -->
+</body>
+<!-- Main JS -->
 <script src="js/main.js"></script>
-<script src="js/style.js"></script>
 <!-- Bootstrap.js -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+
 </html>

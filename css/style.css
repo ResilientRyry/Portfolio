@@ -1,307 +1,147 @@
-/* h1, h2, h3, h4, img, p, a, ul, li{
-display: block;
-} */
 html body {
-  color: white;
-  background-color: black;
-  font-family: "Noto Sans", sans-serif;
-  width: 100%;
-  height: 100%;
-  float: left;
+  font-family: "Playfair Display", serif;
 }
-html #header {
-  margin-top: 50px;
-}
-html #header nav {
-  width: 100%;
-}
-html #header nav .show > .btn-info.dropdown-toggle {
-  color: #42C5E4;
-  background-color: white;
-  border-color: #42C5E4;
-}
-html #header nav .dropdown-item {
-  color: #42C5E4;
-}
-html #header nav .dropdown-item:active {
-  color: #42C5E4;
-  background-color: black;
-}
-html #header nav .dropdown-item:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-html #header nav .btn-group {
-  width: 15%;
-  margin-left: 13.5%;
-}
-html #header nav .btn-group .btn-info {
-  color: #42C5E4;
-  background-color: black;
-  border-color: #42C5E4;
-}
-html #header nav .btn-group .btn-info:active {
-  color: #42C5E4;
-  background-color: white;
-  border-color: #42C5E4;
-}
-html #header nav .btn-group .contact {
-  width: 100%;
-}
-html #header nav .btn-group .contact a {
-  width: 100%;
-  text-decoration: none;
-}
-html #header nav .btn-group .contact a:hover {
-  color: #42C5E4;
-  background-color: white;
-  border-color: #42C5E4;
-}
-html #header nav .btn-group .contact:hover {
-  color: #42C5E4;
-  background-color: white;
-  border-color: #42C5E4;
-}
-html #header img {
-  width: 50%;
-  height: 550px;
-  border-radius: 50%;
-  margin: 0px 25%;
-}
-html #header .container {
-  background-color: black;
-}
-html main {
-  border-radius: 2%;
-}
-html main h4 {
-  background-color: black;
-  border: 2px solid white;
-  padding: 10px;
-}
-html main section {
-  border-radius: 2%;
-}
-html main .about {
-  font-size: 30px;
-  padding: 200px;
-}
-html main .carousel-indicators {
-  margin: 0px;
-}
-html main .exp {
-  width: 50%;
-  margin: 20px 25%;
-}
-html main .exp .comp {
-  font-size: 18px;
-  font-weight: bold;
-  border: 2px solid white;
-  padding: 10px;
-  margin-left: 20px;
-}
-html main .exp .carousel-control-prev, html main .exp .carousel-control-next {
-  border: 2px solid black;
-}
-html main .projects .projectBox {
-  padding-left: 15%;
-}
-html main .projects .projectBox section {
-  width: 35%;
-  height: 200px;
-  margin: 10px 2%;
-  float: left;
-  border: 2px solid white;
-}
-html main .projects .projectBox section p {
+html body header .navigation, html body header .menu2 {
   display: none;
 }
-html main .projects .projectBox section:hover {
-  box-shadow: 2px 5px 2px 5px rgba(0, 0, 0, 0.3);
-}
-html main .projects .projectBox section:hover p {
-  display: block;
-}
-html main .projects .projectBox img {
-  width: 90%;
-  height: 150px;
-  margin: 10px 15px;
-}
-html .gallery h5 {
-  margin: 10px 20%;
-}
-html .gallery button.btn {
-  background-color: black;
-}
-html .gallery .modal-dialog {
-  max-width: 750px;
-}
-html .gallery .modal-dialog .modal-body {
-  height: 500px;
-  background-color: black;
-}
-html .gallery .modal-dialog .modal-body .bd-example {
+html body header .menu, html body header .menu2 {
   width: 100%;
-  height: 100%;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 5px solid #42C5E4;
 }
-html .gallery .modal-dialog .modal-body .bd-example .carousel {
-  width: 100%;
-  height: 100%;
+html body header .btn-outline-info {
+  border-color: #42C5E4;
+  color: #42C5E4;
+  margin-top: 15px;
+}
+html body header .btn-outline-info:hover {
+  color: #fff;
   background-color: #42C5E4;
+  border-color: #42C5E4;
 }
-html .gallery .modal-dialog .modal-body .bd-example .carousel .carousel-inner {
-  width: 100%;
-  height: 100%;
-}
-html .gallery .modal-dialog .modal-body .bd-example .carousel .carousel-inner .carousel-item {
-  width: 100%;
-  height: 100%;
-}
-html .gallery .modal-dialog .modal-body .bd-example .carousel .carousel-inner .carousel-item .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-html .gallery .modal-dialog .modal-body .bd-example .carousel .carousel-inner .carousel-item img {
-  width: auto;
-  min-height: 500px;
-  max-height: 600px;
-}
-html .interviews h5 {
-  margin-left: 10%;
-}
-html .interviews ul {
-  width: 50%;
-}
-html .interviews li {
-  list-style: none;
-  width: 100%;
-  margin-top: 5px;
-}
-html .interviews li a {
-  color: white;
-  text-decoration: none;
-}
-html .interviews .btn-outline-dark:hover {
-  background-color: black;
-}
-html footer {
-  width: 80%;
-}
-html footer .socials {
-  padding-left: 30%;
-  text-align: left;
-}
-html footer img {
-  width: 33%;
-  height: auto;
-  margin-left: 40%;
-}
-
-#resume section {
-  border-radius: 2%;
-}
-#resume i {
-  margin-right: 10px;
-}
-#resume h2, #resume h3 {
+html body header section {
   width: 100%;
   text-align: center;
 }
-#resume .row:first-of-type {
-  color: white;
+html body .about h4 {
+  text-align: center;
+  margin-top: 20px;
 }
-#resume .row {
-  color: black;
+html body .about p {
+  text-align: center;
 }
-#resume .row h2 {
-  color: white;
+html body .interviews {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  padding: 15px;
+  margin-bottom: 10px;
 }
-#resume .col p, #resume .col h1 {
-  text-align: left;
-  padding: 0px;
-  margin-bottom: 5px;
+html body .interviews h4 {
+  text-align: center;
 }
-#resume .col button {
-  border-color: white;
+html body .interviews .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-#resume .col button a {
-  color: white;
-}
-#resume .col button a:hover {
+html body .interviews .carousel-caption a {
+  text-decoration: none;
   color: #42C5E4;
 }
-#resume .col button:hover {
-  border-color: white;
-  background-color: black;
+html body .interviews img {
+  height: 550px;
+  border-radius: 5%;
+}
+html body footer .socials {
+  width: 20%;
+  float: left;
+}
+html body footer .socials a {
+  text-decoration: none;
   color: #42C5E4;
 }
-#resume .col img {
-  width: 60%;
-  height: 300px;
-  border-radius: 50%;
-  margin: 0px 20%;
+html body footer .qoute {
+  text-align: center;
+  width: 45%;
+  float: left;
+}
+html body footer .qoute p:first-of-type {
+  display: none;
+}
+html body footer #logo {
+  width: 35%;
+  float: left;
+}
+html body footer #logo img {
+  width: 100%;
+  height: 150px;
+}
+
+#resume {
+  text-align: center;
+}
+#resume a {
+  text-decoration: none;
+  color: #42C5E4;
+}
+#resume a .btn-outline-info {
+  border-color: #42C5E4;
+  background-color: #42C5E4;
+  color: white;
+  margin-top: 15px;
+}
+#resume a .btn-outline-info:hover {
+  color: #42C5E4;
+  background-color: white;
+  border-color: #42C5E4;
+}
+#resume h2 {
+  text-align: center;
+  width: 100%;
 }
 #resume .accordion {
   width: 100%;
+  margin-bottom: 20px;
 }
-#resume .accordion button:focus {
-  box-shadow: none;
+#resume .accordion .title {
+  font-weight: bold;
+  border-bottom: 3px solid #42C5E4;
 }
-#resume .accordion .card-body {
-  color: white;
-  background-color: black;
-}
-#resume .accordion .card-body .list-group-item {
-  color: black;
-}
-#resume .skills {
-  background-color: white;
-}
-#resume .skills .row {
-  margin-left: 100px;
-}
-#resume .skills .row button {
-  width: 10%;
-  margin: 10px 95px;
+#resume i {
+  margin-right: 10px;
   color: #42C5E4;
-  border-color: #42C5E4;
 }
-#resume .skills .row button:hover {
-  color: white;
-  background-color: #42C5E4;
-}
-#resume .skills .row button:focus {
-  box-shadow: none;
+#resume .list-group-item {
+  border: 1px solid #42C5E4;
 }
 
-#contact section {
-  border-radius: 2%;
-}
-#contact input, #contact textarea {
-  color: white;
-  background-color: black;
-}
-
-.deets .row section {
-  width: 100%;
+#projects {
   text-align: center;
 }
-
-.contactForm {
-  padding: 25px;
+#projects main {
+  min-height: 450px;
 }
-.contactForm button {
-  margin-left: 50%;
-  font-size: 18px;
+#projects h3 {
+  margin: 50px;
+}
+
+#contact .btn-info {
+  border-color: #42C5E4;
+  background-color: #42C5E4;
   color: white;
-  background-color: black;
+  margin-top: 15px;
+}
+#contact .btn-info:hover {
+  color: #42C5E4;
+  background-color: white;
+  border-color: #42C5E4;
 }
 
-form textarea {
-  color: #42C5E4;
-  margin: 0px 10px;
-  background-image: url("../images/logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+@media screen and (min-width: 750px) {
+  html body footer #logo img {
+    width: 60%;
+    margin-left: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

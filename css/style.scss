@@ -1,360 +1,174 @@
-$color_1: white;
-$background_color_1: black;
 $blue: #42C5E4;
 
-/* h1, h2, h3, h4, img, p, a, ul, li{
-display: block;
-} */
+// GENERAL/INDEX CSS
+html body{
+	font-family: 'Playfair Display', serif;
 
-// General/Index CSS
-html {
-	body {
-		color: $color_1;
-		background-color: $background_color_1;
-		font-family: 'Noto Sans', sans-serif;
-		width: 100%;
-		height: 100%;
-		float: left;
-	}
-	#header{
-		margin-top: 50px;
-
-		nav{
+	// HEADER CSS START
+	header{
+		.navigation, .menu2{
+			display: none;
+		}
+		.menu, .menu2{
 			width: 100%;
-
-			.show>.btn-info.dropdown-toggle {
-				color: $blue;
-				background-color: white;
-				border-color: $blue;
-			}
-
-			.dropdown-item{
-				color: $blue;
-			}
-
-			.dropdown-item:active{
-				color: $blue;
-				background-color: black;
-			}
-			.dropdown-item:hover{
-				background-color: rgba(0,0,0,0.8)
-			}
-
-			.btn-group{
-				width: 15%;
-				margin-left: 13.5%;
-
-				.btn-info{
-					color: $blue;
-					background-color: black;
-					border-color: $blue;
-
-				}
-				.btn-info:active{
-					color: $blue;
-					background-color: white;
-					border-color: $blue;
-				}
-
-				.contact{
-					width: 100%;
-
-					a{
-						width: 100%;
-						text-decoration: none;
-					}
-					a:hover{
-						color: $blue;
-						background-color: white;
-						border-color: $blue;
-					}
-				}
-				.contact:hover{
-					color: $blue;
-					background-color: white;
-					border-color: $blue;
-				}
-			}
+			height: 50px;
+			font-size: 25px;
+			text-align: center;
+			border-bottom: 5px solid $blue;
 		}
-
-
-		img{
-			width: 50%;
-			height: 550px;
-			border-radius: 50%;
-			margin: 0px 25%;
+		.btn-outline-info{
+			border-color: $blue;
+			color: $blue;
+			margin-top: 15px;
 		}
-		.container {
-			background-color: black;
-		}
-	}
-	main {
-		border-radius: 2%;
-
-		h4{
-			background-color: black;
-			border: 2px solid white;
-			padding: 10px;
+		.btn-outline-info:hover {
+			color: #fff;
+			background-color: $blue;
+			border-color: $blue;
 		}
 		section{
-			border-radius: 2%;
-		}
-		.about{
-			font-size: 30px;
-			padding: 200px;
-		}
-		.carousel-indicators{
-			margin: 0px;
-		}
-		.exp {
-			width: 50%;
-			margin: 20px 25%;
-
-			.comp{
-				font-size: 18px;
-				font-weight: bold;
-				border: 2px solid white;
-				padding: 10px;
-				margin-left: 20px;
-			}
-			.carousel-control-prev, .carousel-control-next{
-				border: 2px solid black;
-			}
-		}
-		.projects{
-
-			.projectBox{
-				padding-left: 15%;
-
-				section{
-					width: 35%;
-					height: 200px;
-					margin: 10px 2%;
-					float: left;
-					border: 2px solid white;
-					p{
-						display: none;
-					}
-				}
-				section:hover{
-					box-shadow: 2px 5px 2px 5px rgba(0,0,0,0.3);
-					p{
-						display: block;
-					}
-				}
-				img{
-					width: 90%;
-					height: 150px;
-					margin: 10px 15px;
-				}
-			}
-		}
-	}
-
-	.gallery{
-
-		h5{
-			margin: 10px 20%;
-		}
-
-		button.btn{
-			background-color: black;
-		}
-
-		.modal-dialog{
-			max-width: 750px;
-
-			.modal-body{
-				height: 500px;
-				background-color: black;
-
-				.bd-example{
-					width: 100%;
-					height: 100%;
-
-					.carousel{
-						width: 100%;
-						height: 100%;
-						background-color: $blue;
-
-						.carousel-inner{
-							width: 100%;
-							height: 100%;
-
-							.carousel-item{
-								width: 100%;
-								height: 100%;
-
-								.carousel-caption{
-									background-color: rgba(0, 0, 0, 0.5);
-								}
-								img{
-									width: auto;
-									min-height: 500px;
-									max-height: 600px;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.interviews{
-		h5{
-			margin-left: 10%;
-		}
-		ul{
-			width: 50%;
-		}
-		li{
-			list-style: none;
 			width: 100%;
-			margin-top: 5px;
-
-			a{
-				color: white;
-				text-decoration: none;
-			}
-		}
-		.btn-outline-dark:hover {
-			background-color: black;
+			text-align: center;
 		}
 	}
+	// HEADER CSS END
+	//ABOUT CSS
+	.about{
+		// box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+		h4{
+			text-align: center;
+			margin-top: 20px;
+		}
+		p{
+			text-align: center;
+		}
+	}
+	// ABOUT CSS END
+	// INTERVIEWS CSS BEGIN
+	.interviews{
+		box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+		border-radius: 5%;
+		padding: 15px;
+		margin-bottom: 10px;
 
-	footer{
-		width: 80%;
-
-		.socials{
-			padding-left: 30%;
-			text-align: left;
+		h4{
+			text-align: center;
+		}
+		.carousel-caption{
+			background-color: rgba(0, 0, 0, 0.5);
+			a{
+				text-decoration: none;
+				color: $blue;
+			}
 		}
 		img{
-			width: 33%;
-			height: auto;
-			margin-left: 40%;
+			height: 550px;
+			border-radius: 5%;
 		}
 	}
+	// INTERVIEWS CSS END
+	// FOOTER CSS BEGIN
+	footer{
+		.socials{
+			width: 20%;
+			float: left;
+
+			a{
+				text-decoration: none;
+				color: $blue;
+			}
+		}
+		.qoute{
+			text-align: center;
+			width: 45%;
+			float: left;
+
+			p:first-of-type{
+				display: none;
+			}
+		}
+		#logo{
+			width: 35%;
+			float: left;
+
+			img{
+				width: 100%;
+				height: 150px;
+			}
+		}
+	}
+	// FOOTER CSS END
 }
 // Resume CSS
-#resume {
-	section{
-		border-radius: 2%;
+#resume{
+	text-align: center;
+	a{
+		text-decoration: none;
+		color: $blue;
+		.btn-outline-info{
+			border-color: $blue;
+			background-color: $blue;
+			color: white;
+			margin-top: 15px;
+		}
+		.btn-outline-info:hover {
+			color: $blue;
+			background-color: white;
+			border-color: $blue;
+		}
+	}
+	h2{
+		text-align: center;
+		width: 100%;
+	}
+	.accordion{
+		width: 100%;
+		margin-bottom: 20px;
+		.title{
+			font-weight: bold;
+			border-bottom: 3px solid $blue;
+		}
 	}
 	i{
 		margin-right: 10px;
+		color: $blue;
 	}
-	h2 , h3{
-		width: 100%;
-		text-align: center;
+	.list-group-item{
+		border: 1px solid $blue;
 	}
-	.row:first-of-type{
-		color: white;
-	}
-	.row{
-		color: black;
+}
 
-		h2{
-			color: white;
-		}
+// Projects CSS
+#projects{
+	text-align: center;
+	main{
+		min-height: 450px;
 	}
-	.col{
-		p , h1{
-			text-align: left;
-			padding: 0px;
-			margin-bottom: 5px;
-		}
-		button{
-			border-color: white;
-			a{
-				color: white;
-			}
-			a:hover{
-				color: $blue;
-			}
-		}
-		button:hover{
-			border-color: white;
-			background-color: black;
-			color: $blue;
-		}
+	h3{
+		margin: 50px;
+	}
+}
+
+// Contact CSS
+#contact{
+	.btn-info{
+		border-color: $blue;
+		background-color: $blue;
+		color: white;
+		margin-top: 15px;
+	}
+	.btn-info:hover {
+		color: $blue;
+		background-color: white;
+		border-color: $blue;
+	}
+}
+// Responsive CSS
+@media screen and (min-width: 750px) {
+  html body footer #logo{
 		img{
 			width: 60%;
-			height: 300px;
-			border-radius: 50%;
-			margin: 0px 20%;
+			margin-left: 20px;
 		}
 	}
-
-	.accordion{
-		width: 100%;
-
-		button:focus{
-			box-shadow: none;
-		}
-
-		.card-body{
-			color: white;
-			background-color: black;
-
-			.list-group-item{
-				color: black;
-			}
-		}
-	}
-
-	.skills {
-		background-color: white;
-
-		.row{
-			margin-left: 100px;
-			button{
-				width: 10%;
-				margin: 10px 95px;
-				color: $blue;
-				border-color: $blue;
-			}
-			button:hover{
-				color: white;
-				background-color: $blue;
-			}
-			button:focus{
-				box-shadow: none;
-			}
-		}
-	}
-
-}
-// Contacts CSS
-#contact{
-	section{
-		border-radius: 2%;
-	}
-	input, textarea{
-		color: white;
-		background-color: black;
-	}
-}
-.deets .row section{
-	width: 100%;
-	text-align: center;
-}
-.contactForm{
-	padding: 25px;
-
-	button{
-		margin-left: 50%;
-		font-size: 18px;
-		color: white;
-		background-color: black;
-	}
-}
-form textarea{
-	color: $blue;
-	margin: 0px 10px;
-	background-image: url('../images/logo.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
 }
